@@ -1,0 +1,465 @@
+/*new font family*/
+@font-face {
+    font-family: 'Luizi';
+    src: url('../Fonts/OS_Luizi Round-FFC.otf');
+}
+
+@font-face {
+    font-family: 'Assistant-Regular';
+    src: url('../Fonts/Assistant-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Assistant-SemiBold';
+    src: url('../Fonts/Assistant-SemiBold.otf');
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+  --navMinFs: 12px;
+  --navMaxFs: 20px;
+  --maxNavHeight: 500px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  direction: rtl;
+  font-family: Assistant;
+  color: #14213d;
+}
+
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* 
+.goBack {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+} */
+
+.header--goback {
+  width: 100%;
+  position: absolute;
+}
+
+#searchOptions {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+
+#searchOptions .box {
+  margin: 0;
+  border-radius: unset;
+}
+
+.header--goback a {
+  position: absolute;
+  top: 58%;
+  right: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.header--goback .goBack img {
+  margin-left: rem;
+}
+
+.header--goback p {
+  margin-right: 0.5rem;
+  color: #e5e5e5;
+}
+/* 
+.logo {
+  position: absolute;
+  right: auto;
+  left: auto;
+  display: block;
+} */
+
+figure {
+  margin: 0px;
+}
+
+#cards .card-header {
+  background-color: unset;
+
+  padding: 0 2rem;
+  border-bottom: none;
+}
+#cards .card-header h4 {
+  font-size: 1.2rem;
+}
+
+#cards .card-header p,
+#cards .card-header .card-body {
+  font-size: 1rem;
+}
+section.right_section button {
+  height: fit-content;
+  padding-top: 0.75rem;
+}
+
+#cards {
+  margin-right: 1.25rem;
+  border-right: 2px solid black;
+}
+#cards .card {
+  border: none;
+  /* display: grid;
+  grid-template-columns: 1fr 11fr; */
+  /* background-color: wheat;
+  border: 5px solid red;
+  margin: 1rem 0; */
+  position: relative;
+}
+
+.right_section {
+  position: absolute;
+  right: -23px;
+  top: 5px;
+}
+
+section.right_section {
+  display: inline-grid;
+}
+
+.row.padded-row-item {
+  margin: 10px 5px;
+}
+.padded-row-item .card {
+  width: 15vh;
+  height: 21.5vh;
+  margin: 0 auto;
+}
+
+.padded-row-item .card .card-body {
+  padding: 0 1rem;
+}
+
+.padded-row-item .card .card-title {
+  text-align: center;
+}
+
+.img_visible {
+  display: block;
+}
+
+.img_hidden {
+  display: none;
+}
+
+.btn-link {
+  color: #14213d;
+}
+
+.card-header h2 {
+  font-weight: 200;
+}
+
+#line {
+  border-left: 2px solid #e5e5e5;
+  height: 50px;
+  float: right;
+  display: inline;
+}
+
+#myPuppy h3 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+#myPuppy p {
+  font-size: 18px;
+  font-family: Assistant semibold;
+}
+
+#puppyName {
+  float: right;
+  width: 50%;
+}
+
+/*#puppyAge {
+    float: left;
+    width: 50%;
+}*/
+
+a.col-sm-2 {
+  font-size: 12pt;
+}
+
+.fixed-bottom {
+  position: absolute;
+  padding: 0.2rem;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav {
+  border-radius: 100px;
+  margin: 0rem auto;
+
+  width: 80%;
+  max-width: var(--maxNavHeight) !important;
+}
+#navUL {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+#cards .card .card-body {
+  padding: 0 1.25rem;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #e5e5e5;
+  font-family: Assistant;
+
+  text-align: center;
+
+  line-height: 1;
+  font-size: clamp(var(--navMinFs), 2.5vw, var(--navMaxFs));
+}
+
+nav a img {
+  width: 7vw;
+  height: 7vw;
+  max-height: 30px;
+}
+
+#navUL .col {
+  padding: 0.5rem;
+}
+.video {
+  padding-top: 20px;
+}
+
+.video p {
+  text-align: center;
+  font-size: 16pt;
+}
+header {
+  /* height: 20vh; */
+  position: relative;
+}
+main {
+  height: 80vh;
+}
+
+header.blueHeader {
+  background-color: #14213d;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 2rem;
+   height: 120px; 
+}
+
+.blueHeader h1 {
+    color: #ffffff;
+    font-family: Luizi;
+    font-size: 200%;
+}
+
+#search-input--container{
+    margin-top:-2%
+}
+
+header .logo {
+    margin-bottom: 1rem;
+}
+
+header #search-input--container {
+  width: 100%;
+  max-width: 400px;
+}
+
+header #search-input--element {
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+/* #blueHeader2 {
+  background-color: #14213d;
+  width: 100%;
+  height: 60px;
+  padding-top: 20px;
+} */
+
+#cards--container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 200px));
+
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card--element {
+}
+
+.card--container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 150px;
+
+  background: url("../pics/puppy1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center; 
+}
+
+#CardInHouse{
+  background: url("../pics/puppy2Blue.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
+
+#CardOutside{
+  background: url("../pics/puppy3Blue.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
+
+#CardFood{
+  background: url("../pics/puppy1Blue.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
+
+#CardGrooming{
+  background: url("../pics/puppy2Blue.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
+
+#CardBehavior{
+  background: url("../pics/puppy3Blue.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
+
+#CardCommands{
+  background: url("../pics/puppy1Blue.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
+
+.card-title {
+    font-family: 'Luizi';
+    font-size: 230%;
+}
+
+.card-body {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+.main {
+  width: 50%;
+  margin: 15px auto;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+#blueHeader2 {
+}
+
+@media screen and (min-width: 576px) {
+  nav {
+    max-width: 960px;
+  }
+}
+
+.is-fixed-bottom{
+  margin-bottom: 5%;
+}
+
+.box{
+  box-shadow: none;
+}
+
+.content h1:not(:first-child){
+  margin-top: 1.35em;
+}
+
+.box.content{
+  margin-bottom: 0rem;
+}ד
+
+hr{
+  background-color: #14213d;
+  height: 0.1rem;
+}
+
+h2{
+  color: #14213d;
+}
+
+
+#arrowTop {
+    width: 12%;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    top: 91%;
+    right: 80%;
+}
+
+iframe {
+    width: 100%;
+}
