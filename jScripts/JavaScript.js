@@ -148,6 +148,6 @@ function goToPageAfterSearchClick(suggestion) {
   localStorage.setItem("searchedSections", suggestion.id);
 
   console.log(suggestion.page);
-  const url = `${suggestion.page}.html`;
+  const url = `/${suggestion.page}.html`;
   window.open(url, "_self");
 }
