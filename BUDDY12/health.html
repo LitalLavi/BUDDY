@@ -1,0 +1,357 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="utf-8" />
+    <title>BUDDY - רק בריאות</title>
+    <meta name="description" content="אתר מלווה למשפחות אומנה עבור המרכז הישראלי לכלבי נחייה" />
+    <meta name="keywords"
+          content="כלבים, נחייה, אומנה, המרכז הישראלי לכלבי נחייה, פרויקט גמר, dog, guide, guide dogs" />
+    <meta name="author" content="Lital Lavi & Michal Navon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!--Icon-->
+    <link rel="icon" href="pics/iconPaw.png" type="image/icon type">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="styles/overidestyle.css">
+    <link href="styles/styleHealthAcc.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/cd555a857e.js" crossorigin="anonymous"></script>
+    <script src="jScripts/Health.js"></script>
+
+</head>
+
+<body data-page="health">
+    <div id="container">
+        <header class="blueHeader">
+
+            <a id="logo" href="profile.html">
+                <img class="logo" src="SVG/FINALOGO2.png" width="60" />
+            </a>
+            <!--
+        <input list="searchOptions" onchange="redirectTo(this)" id="searchInput" class="input form-control"
+            name="searchInput" placeholder="חיפוש" /> -->
+
+            <div id="search-input--container" class="control has-icons-right">
+                <input id="search-input--element" class="input" type="text" placeholder="מה בא לי לחפש">
+                <span class="icon is-small is-right">
+                    <i class="fas fa-search"></i>
+                </span>
+                <div id="searchOptions">
+                </div>
+            </div>
+        </header>
+        <span>
+            במידה והווטרינר שלכם מעוניין לדון בבעיות רפואיות הקשורות לגור שלכם, אנא בקשו ממנו ליצור
+            קשר עם ורד סולומונוביץ אביטן, אחראית תחום הרפואי של הגורי נחייה, במספר 054-2509990
+            <br />
+            לצורך ביקור אצל רופא יש לקבל אישור מצוות המדריכים.
+            יש לשלוח אלינו את הקבלות בליווי סיכום ביקור על ידי הווטרינר. ללא סיכום רפואי לא יינתן החזר!!
+        </span>
+        <br /><br />
+
+        <article>
+            <div class="accordion">
+                <div class="con">
+                    <div class="accordion">
+
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_puke" aria-expanded="false">
+                                <span class="accordion-title">
+                                    הגור מקיא, מה
+                                    לעשות?
+                                </span><span class="icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>
+                                    הקאות יכולות להיגרם ממספר סיבות:<br />
+                                    1. הגור אכל מהר מידיי את הארוחה שלו<br />
+                                    2. הגור אכל משהו שהגוף שלו לא יכול לעכל וזו הדרך להוציא<br />
+                                    3. סיבה רפואית אחרת<br />
+                                    - במידה ותדירות ההקאות אינה גבוהה (הקאה חד פעמית או פחות מ3 פעמים בשעה):<br />
+                                    יש לעשות צום מים של שעתיים – ארבע שעות ולאחר מכן לתת כמות קטנה של מים ולעקוב אחר הגור שהוא
+                                    אינו מקיא פעם נוספת.<br />
+                                    - במידה והגור הקיא את כל הארוחה שסיים זה עתה יש לתת לגור רק מים עד לארוחה הבאה שלו,
+                                    <b>
+                                        אין צורך
+                                        להשלים את הארוחה שהקיא!!
+                                    </b>
+                                    <br />
+                                    - במידה ומקיא 4-6 פעמים בשעה להתקשר לאחראי הבריאות ולעדכן בגוריפורט.<br />
+                                </p>
+                            </div>
+                        </section>
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_diarrhea" aria-expanded="false">
+                                <span class="accordion-title">
+                                    הגור משלשל, מה
+                                    לעשות?
+                                </span><span class="icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>
+                                    שלשול הינו צואה מימית. אם הצואה במרקם שניתן להרים את רובה עם שקית היא אינה שלשול.
+                                    כאשר מזהים שלשול נפעל לפי הנוהל הבא:<br />
+                                    1. <b>צום מלא</b>.
+                                    דילוג על 2 ארוחות (במידה והגור אוכל 3 פעמים ביום) או על ארוחה אחת (במידה והגור אוכל פעם או פעמיים ביום).<br />
+                                    2. ביומיים הקרובים יש לתת לגור לאכול אורז שבושל אך ורק במים (בלי שמן או תבלינים). כמות האורז צריכה להיות זהה לכמות האוכל שהגור מקבל. יום לאחר מכן, נערבב את האורז יחד עם האוכל היבש שלו ביחס של 50/50. לאחר מכן נחזיר אותו לתזונה שלו בהדרגה במשך יומיים עד שיחזור לאכול רק את האוכל הרגיל שלו. סה"כ כ-4 ימי טיפול.<br />
+                                    מה עושים אם הגור לא אוהב אורז? כמה טיפים כדי לגרום לו לאכול אותו בכל זאת:<br />
+                                    - להוסיף לאורז מעט אבקת מרק בשרית<br />
+                                    - לערבב את האורז עם מעט גרגירים מהאוכל היבש שהמסנו במים רותחים<br />
+                                    - להוסיף לאורז מעט דלעת מבושלת<br /><br />
+                                    <b>שלשולים הינה תופעה שכיחה מאוד !! במידה והשלשולים נמשכים גם לאחר תהליך הטיפול או במהלכו - עדכנו בגוריפורט. כתבו שביצעתם צום ותזונה של אורז</b>.<br />
+                                </p>
+                            </div>
+                        </section>
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_eyes" aria-expanded="false">
+                                <span class="accordion-title">
+                                    יש לגור שלי
+                                    הרבה הפרשות בעיניים,<br /> מה עושים ?
+                                </span><span class="icon"
+                                             aria-hidden="true"></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>
+                                    במידה ויש הפרשות, ניתן להקל על הגור על ידי קומפרסים של תה כ4 פעמים ביום:<br />
+                                    עשו שימוש בתיון של
+                                    <b>תה רגיל</b>
+                                    (לא ירוק, לא קמומיל ולא כל תמצית אחרת). הכינו כוס תה ללא סוכר. המתינו שהטמפרטורה תתקרר. טבלו צמר גפן ונקו את העין של הגור.<br />
+                                    כשהמים הופכים לפושרים נטבול צמר גפן וננקה את העין של הגור. חשוב להחליף צמר גפן בין כל טבילה
+                                    לטבילה, אין להשתמש באותו צמר
+                                    הגפן לשתי העיניים בכדי למנוע את המעבר של הדלקת מאחת לשנייה.<br />
+                                    הפרשות מהעיניים עלולות להעיד על דלקת עיניים שמתפתחת או בעיה אחרת. לכן במידה והעין נראית אדומה, נפוחה או מגרדת וקיימות הפרשות ירוקות - עדכנו בגוריפורט.<br />
+                                </p>
+                            </div>
+                        </section>
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_ears" aria-expanded="false">
+                                <span class="accordion-title">
+                                    יש לגור שלי
+                                    הפרשות מהאוזניים,<br /> מה עכשיו ?
+                                </span><span class="icon"
+                                             aria-hidden="true"></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>
+                                    קודם כל חשוב לדעת כי הפרשות באוזניים זה דבר שגרתי אצל גורים.<br />
+                                    נחשוד בדלקת כאשר:<br />
+                                    1. ההפרשות כהות<br />
+                                    2. ישנו ריח חריף מהאוזן<br />
+                                    3. הגור מתגרד הרבה באזור<br />
+                                    4. הגור מתנער הרבה<br />
+                                    5. לעיתים האוזן המודלקת תהיה נמוכה יותר מהבריאה כאשר הגור מסתכל עלינו<br />
+                                    6. הגור מפגין כאב למגע באזור האוזניים<br />
+                                </p>
+                            </div>
+                        </section>
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_teeth" aria-expanded="false">
+                                <span class="accordion-title">
+                                    רגע, לכלב שלי
+                                    מתחלפות השיניים ?
+                                </span><span class="icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>
+                                    כן! בין הגילאים 4-8 חודשים יחליף הגור את כל שינוי.<br />
+                                    החלפת השיניים יכולה להתבטא בכתמי דם על הצעצועים של הגור, חוסר תיאבון (מכיוון שכואב לו ללעוס
+                                    את האוכל) או ריח רע מהפה.<br />
+                                    במידה והגור לא רוצה לאכול ניתן להרטיב לו מעט את האוכל על מנת להקל עליו את הלעיסה.<br />
+                                    טיפים להעברת ריח הפה !<br />
+                                    - תנו לגור חתיכות גזר לאכול - זה יעזור בניקוי השיניים<br />
+                                    - שימו במים של הגור מעט פטרוזיליה<br />
+                                    - תנו לגור מעט חמאת בוטנים טבעית ללא תוספת סוכר (2-3 כפיות בשבוע)<br />
+                                    - השתמשו בענף רוזמרין והעבירו אותו בפיו של הגור כך שהשיניים שלו יחתכו את העלים<br />
+                                    - תכלס, תמיד ניתן לקנות חטיפים דנטליים מחנות חיות<br />
+                                </p>
+                            </div>
+                        </section>
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_vaccines" aria-expanded="false"><span class="accordion-title">אז כמה חיסונים הגור שלי צריך לקבל?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>
+                                    חיסון כלבת - ניתן בגיל 3 חודשים. אחריות לביצוע החיסון הוא עליכם. יש ללכת
+                                    <b>לוטרינר עירוני!!</b>
+                                    לרשום את שם הגור על שמכם בעירייה. להחתים על הטופס שקיבלתם ביום קבלת הגור. זיהוי הגור מתבצע ע"י השבב שכבר הכנסנו לגור. <br />
+                                    חיסון משושה - ניתן ב 4 מנות. פעם ראשונה לפני שהגור ניתן לכם. עוד 3 מנות לאחר קבלתו. החיסונים הללו ניתנים לגור על ידי צוות המרכז בעת הביקור אצלכם. <br />
+                                    זריקה לטיפול נגד תולעת הפארק תינתן אחת לחודשיים על ידי מדריך מהמרכז כל חודש אי זוגי, לכל חייו. הטיפול מתחיל בגיל 4 חודשים.<br />
+                                    טיפול נגד תולעי מעיים יינתן בכדורים אחת לחצי שנה.<br />
+                                </p>
+                            </div>
+                        </section>
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_sterilization" aria-expanded="false">
+                                <span class="accordion-title">
+                                    מתי
+                                    מעקרים או מסרסים?
+                                </span><span class="icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>
+                                    סירוס לזכרים - במידה והגור אינו מועמד להיות כלב רבייה, בערך בגיל 6 חודשים תתבקשו על ידי המרכז להביא את הגור לסירוס ולאחריו הגור ישהה לאשפוז בפנסיון המרכז ל-10 ימים בערך.<br />
+                                    ייחום בנקבות - החל מגיל 9 חודשים וברגע הופעת סימני ייחום אצל הגורה (דימום), תתבקשו על ידי המרכז להביא את הגורה לפנסיון של המרכז בו היא תשהה כשלושה שבועות. רוב הגורות לא מעוקרות בשלב זה. העיקור יתבצע לרוב לאחר הכניסה לאימון בהנחה שהכלבה לא נבחרה לשמש ככלבת רבייה. <br />
+                                    <b>חשוב!</b>
+                                    ברגע שזיהיתם סימנים של ייחום יש להודיע מיידית למדריך/ה שלכם.<br />
+                                </p>
+                            </div>
+                        </section>
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_vet" aria-expanded="false"><span class="accordion-title">מתי צריך ללכת לוטרינר?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>
+                                    טיפולים וטרינריים ייעשו
+                                    <b>רק לאחר קבלת אישור!!</b>
+                                    אנא התייעצו עם אחראי הבריאות בכל מקרה של מחלה או פציעה של הגור. לצורך טיפול מתאים ורציף אנו מבקשים להקפיד על דיווח בכל מקרה של חשד לבעיות כרוניות כמו צליעות, בעיות עור, בעיית עיניים, בעיות עיכול ועוד. <br />
+                                    על טיפולים שיתבצעו ללא התייעצות לא יתקבל החזר. ביקור אצל רופא ללא ידיעתנו יכול לגרור סיבוך המצב הרפואי.<br />
+                                </p>
+                            </div>
+                        </section>
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_itchy" aria-expanded="false"><span class="accordion-title">הגור מתגרד, מה לעשות?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>
+                                    פרעושים וקרציות - הקפידו על טיפול נגד טפילים. במידה ועברו 3 שבועות מהפעם הקודמת שניתנה לו אמפולה ניתן לתת לו פעם נוספת. חשוב שיומיים לפני ויומיים אחרי מתן האמפולה הגור לא יבוא במגע עם מים. חשוב לשים לב שהאמפולה ששמים לגור מתאימה למשקלו (10-25 קילו או 25 קילו ומעלה).<br />
+                                    במידה והאמפולה אינה יעילה כי יש בעיית פרעושים במקום בו אתם גרים ניתן לקנות כדור שנקרא ברבקטו - שימו לב המרכז לכלבי נחייה
+                                    <b>לא</b>
+                                    משתתף בהוצאה זו. <br />
+                                    אלרגיה בעור - חלק מהגורים מראים התגרדות על בסיס אלרגיה. ניתן להתייעץ עם המדריך שלכם. לעיתים האלרגיה היא עקב רגישות למזון. במקרה כזה ניתן לשקול החלפת סוג המזון. לעיתים מקור האלרגיה אינו ידוע. ניתן להקל על האלרגיה באופן הבא:<br />
+                                    - לקחת גרביונים/גרב ולמלא אותם בשיבולת שועל (קוואקר). למלא אמבטיה במים חמימים ולזרוק אליה את הגרב או הגרביונים למשך כרבע שעה, לאחר מכן להכניס את הגור ולתת לו לשהות במים.<br />
+                                    - במידה ויש פצע נקודתי ולא כל הגוף מגרד ניתן לנקות באופן הבא: להמיס כפית מלח בכוס מים (אל דאגה, זה לא שורף לו), לנקות טוב את הפצע ולייבש אותו לאחר מכן. מנעו מהגור עד כמה שניתן ללקק או לגרד את האזור.<br />
+                                    דווחו על התגרדויות מרובות ו/או פצעים בעור בגוריפורט.<br />
+                                </p>
+                            </div>
+                        </section>
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_lameness" aria-expanded="false"><span class="accordion-title">מה אני עושה אם הגור שלי צולע?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>
+                                    צליעות יכולות להופיע משום מקום וכמובן להופיע לאחר טראומה (מכה חזקה).<br />
+                                    במידה וזיהיתם צליעה אצל הכלב, ראשית תחשבו עם עצמכם מה חומרת הצליעה בסרגל של 1 עד 3 .<br />
+                                    1 - משמעו צליעה יחסית קלה. 3 - הכלב אינו דורך על הרגל כלל ומתקשה לצעוד.
+                                    עדכנו בגוריפורט על הופעת הצליעה.<br />
+                                    במידה ומדובר בצליעה קלה עשו לכלב מנוחה של שבוע ללא הרצה בגינות כלבים, כמה שפחות עליה וירידה במדרגות ולכו להליכות בלבד. אם הצליעה לא משתפרת לאחר שבוע עדכנו שוב בגוריפורט.<br />
+                                    לגבי צליעה חמורה יש לוודא מעקב על ידי אחראי הבריאות.<br />
+                                </p>
+                            </div>
+                        </section>
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_ eating" aria-expanded="false"><span class="accordion-title">הכלב אכל משהו מסוכן?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>
+                                    במידה וזיהיתם שהכלב אכל משהו מסוכן
+                                    <b>אין לעודד הקאה</b>
+                                    בשום מצב אלא להתקשר במיידי לאחראית תחום הבריאות. הקאת חומר מסוכן עלולה לגרור החמרת הנזק!!<br />
+                                </p>
+                            </div>
+                        </section>
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_ apathetic" aria-expanded="false"><span class="accordion-title">הגור מתנהג בצורה אפטית?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>
+                                    ראשית כדאי לבדוק האם קיים תאבון. נסו להציע חטיף מעניין וטעים. רצון לאכול הוא סימן חיובי. סירוב לאכול מעיד על מצב מורכב יותר. <br />
+                                    שנית נסו לצאת לסיבוב הליכה ולראות אם יש לגור אנרגיות ללכת או איך הוא מתנהג כאשר הוא רואה כלב אחר.  <br />
+                                    במידה ובשני המצבים האלו עדין הגור נראה אפטי יש להתקשר לאחראית תחום הבריאות במיידי.<br />
+                                    במידה והגור הגיב בערנות ל 2 המצבים האלו המשיכו לעקוב ושמרו על קשר עם המדריך שלכם.<br />
+                                </p>
+                            </div>
+                        </section>
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_injuries" aria-expanded="false"><span class="accordion-title">פציעות, נשיכות, נחתך מברזל ועוד?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>
+                                    במידה ומדובר בפצע שיטחי נקו את המקום בעזרת מי מלח (כפית מלח מומסת בכוס מים פושרים, לא שורף). בכל מצב של נשיכה או חתך עמוק יותר יש לדבר ישירות עם אחראי תחום הבריאות ולדווח בגוריפורט.<br />
+                                </p>
+                            </div>
+                        </section>
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_urine" aria-expanded="false"><span class="accordion-title">מהן בעיות שתן וכיצד נפתור אותן?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>
+                                    1.	במידה והכלב שלכם כבר גמול מצרכים בבית ופתאום התחיל לעשות על בסיס קבוע צרכים בבית. לדוגמה - לא מתאפק לילה שלם כמו בעבר.<br />
+                                    2.	אם אתם מזהים שהגור/ה התחיל לעשות המון פעמים שתן בהליכה, מה שלא היה בעבר או מתן שתן קטן כל כמה דקות. <br />
+                                    3.	במידה והשתן עם דם.<br />
+                                    כל המצבים האלו יכולים להעיד על דלקת שתן , בכל מצב כזה יש לדווח בגוריפורט. במידה ונראה שהכלב מאוד סובל יש לדבר עם אחרית התחום הרפואי.<br />
+                                </p>
+                            </div>
+                        </section>
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_papilloma" aria-expanded="false"><span class="accordion-title">אני רואה יבלות על החניכיים, <br />זאת פפילומה?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>
+                                    כאשר לכלב מופיעה יבלת גדולה שנראית קצת כמו כרובית קטנה - מדובר בוירוס הפפילומה. הכלבים נדבקים בזה אחד מהשני אך אל חשש זה לא מדבק לאנשים
+                                    <b>ועובר מעצמו</b>
+                                    אחרי מספר חודשים. ישנה אפשרות שתופיעה כמות גדולה של פפילומות. במידה והבחנתם בפפילומות ודאו שהן אינן מפריעות לו לאכול. רק אם יש קושי מיוחד עם הפפילומות יש לדווח בגוריפורט.<br />
+                                    דוגמאות לפפילומה:
+                                    <br /><img src="pics/papiloma.png" style="width:80%" />
+                                </p>
+                            </div>
+                        </section>
+                        <section class="accordion-item">
+                            <button data-type="accordion" id="health_cough" aria-expanded="false"><span class="accordion-title">יש לגור שלי שיעול, מה צריך לעשות?</span><span class="icon" aria-hidden="true"></span></button>
+                            <div class="accordion-content">
+                                <p>
+                                    שעלת מכלאות היא מחלה ויראלית מדבקת בכלבים אשר מביאה לפגיעה בדרכי הנשימה העליונות. לרוב הכלב יראה בריא ופעיל, ירגיש טוב ולא יראה סימנים מהותיים למעט שיעול קולני תכוף (לרוב ישמע כ-"שיעול יבש"). לעיתים השיעול עשוי להיות מלווה בפליטת ליחה או קצף לבן בסוף השיעול. השיעול מופיע בהתקפים בתדירות משתנה ויכול להמשך אפילו עד שלושה שבועות.<br />
+                                    במידה והכלב שלכם התחיל להשתעל תעקבו שמרגיש טוב ויש לו תאבון ודווחו על כך בגוריפורט. במידה ולא מרגיש טוב או חסר תאבון יש לדבר עם אחרית תחום הבריאות.<br />
+                                    המנעו מלקרב אותו לכלבים אחרים עד שלא משתעל בכלל.<br />
+                                </p>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </article>
+        <br />
+        <br />
+        <br />
+
+        <nav class="navbar is-fixed-bottom" style="background-color: #14213D">
+            <ul id="navUL">
+                <li>
+                    <a class="col" href="profile.html">
+                        <img class="navbar-center" src="SVG/icons_Buddy_profileIcon.svg" width="32" height="32"
+                             alt="" /><br />
+                        פרופיל
+                    </a>
+                </li>
+                <li>
+                    <a class="col" href="click.html">
+                        <img src="SVG/icons_Buddy_pawIcon.svg" width="32" height="32" alt="" /><br />
+                        הכל בקליק
+                    </a>
+                </li>
+                <!--<li>
+                <a class="col" href="outdoor.html">
+                    <img src="SVG/icons_Buddy_pawIcon.svg" width="32" height="32" alt="" /><br />
+                    צאו לטייל
+                </a>
+            </li>-->
+                <li>
+                    <a class="col" href="health.html" style="color: #fca311">
+                        <img src="SVG/icons_Buddy_in_healthIcon.svg" width="32" height="32" alt="" /><br />
+                        רק בריאות
+                    </a>
+                </li>
+                <li>
+                    <a class="col" href="info.html">
+                        <img src="SVG/icons_Buddy_pinIcon.svg" width="32" height="32" alt="" /><br />
+                        שימושי
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+                    <script src="jScripts/JavaScript2.js"></script>
+                    <script type="module" src="jScripts/JavaScript.js"></script>
+
+</body>
+
+</html>

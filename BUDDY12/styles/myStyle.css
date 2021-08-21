@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'GveretLevin';
+    src: url('../Fonts/GveretLevin.eot');
+    src: url('../Fonts/GveretLevin.eot?#iefix') format('embedded-opentype'), url('../Fonts/GveretLevin.ttf') format('truetype');
+}
+
+*,
+*::after,
+x::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --navMinFs: 12px;
+  --navMaxFs: 20px;
+  --maxNavHeight: 500px;
+}
+
+body {
+  direction: rtl;
+  font-family: Assistant;
+}
+
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.logo {
+  /*position: absolute;*/
+  right: auto;
+  left: auto;
+  display: block;
+}
+
+#profile--logo {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+figure {
+  margin: 0px;
+}
+
+#myPuppy {
+  height: 70px;
+  width: 100%;
+  background-color: #14213d;
+  color: #e5e5e5;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#cards .card-header {
+  background-color: unset;
+
+  padding: 0 2rem;
+  border-bottom: none;
+}
+#cards .card-header h4 {
+  font-size: 1.2rem;
+}
+
+#cards .card-header p,
+#cards .card-header .card-body {
+  font-size: 1rem;
+}
+section.right_section button {
+  height: fit-content;
+  padding-top: 0.75rem;
+}
+
+#cards {
+  margin-right: 1.25rem;
+  border-right: 2px solid black;
+}
+#cards .card {
+  border: none;
+  /* display: grid;
+  grid-template-columns: 1fr 11fr; */
+  /* background-color: wheat;
+  border: 5px solid red;
+  margin: 1rem 0; */
+  position: relative;
+}
+
+.right_section {
+  position: absolute;
+  right: -23px;
+  top: 5px;
+}
+
+section.right_section {
+  display: inline-grid;
+}
+
+.row.padded-row-item {
+  margin: 10px 5px;
+}
+.padded-row-item .card {
+  width: 15vh;
+  height: 21.5vh;
+  margin: 0 auto;
+}
+
+.padded-row-item .card .card-body {
+  padding: 0 1rem;
+}
+
+.padded-row-item .card .card-title {
+  text-align: center;
+}
+
+.img_visible {
+  display: block;
+}
+
+.img_hidden {
+  display: none;
+}
+
+.btn-link {
+  color: #14213d;
+}
+
+.card-header h2 {
+  font-weight: 200;
+}
+
+#line {
+  border-left: 2px solid #e5e5e5;
+  height: 50px;
+  float: right;
+  display: inline;
+}
+
+#myPuppy h3 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+#myPuppy p {
+  font-size: 18px;
+  font-family: Assistant semibold;
+}
+
+#puppyName {
+  float: right;
+  width: 50%;
+}
+
+/*#puppyAge {
+    float: left;
+    width: 50%;
+}*/
+
+nav a {
+}
+
+a.col-sm-2 {
+  font-size: 12pt;
+}
+
+#navUL {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+nav {
+  border-radius: 100px;
+  margin: 1rem auto;
+  width: 100%;
+  max-width: var(--maxNavHeight) !important;
+}
+
+#cards .card .card-body {
+  padding: 0 1.25rem;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+}
+
+nav a {
+  color: #e5e5e5;
+  font-family: Assistant;
+
+  text-align: center;
+
+  line-height: 1;
+  font-size: clamp(var(--navMinFs), 2.5vw, var(--navMaxFs));
+}
+
+nav a img {
+  width: 7vw;
+  height: 7vw;
+  max-height: 15px;
+}
+
+#navUL .col {
+  padding: 0;
+}
+.video {
+  padding-top: 20px;
+}
+
+.video p {
+  text-align: center;
+  font-size: 16pt;
+}
+
+#blueHeader {
+  background-color: #14213d;
+  width: 100%;
+  height: 100px;
+  padding-top: 20px;
+}
+
+#blueHeader2 {
+  background-color: #14213d;
+  width: 100%;
+  height: 60px;
+  padding-top: 20px;
+}
+
+.main {
+  width: 50%;
+  margin: 15px auto;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+#blueHeader2 {
+}
+
+@media screen and (min-width: 576px) {
+  nav {
+    max-width: 960px;
+  }
+}
+
+
+#fatDog{
+    width:100%;
+}
